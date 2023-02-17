@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+}
+h1{
+    color:white;
+    font-size: 60px;
+    margin:0px;
+}
+.main{
+    width:100px;
+    height: 20px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+span{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius:50%;
+    padding:5px;
+    animation-name: dotss;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.one{
+    animation-delay: 0s;
+}
+.two{
+    animation-delay:0.25s;
+}
+.three{
+    animation-delay:0.50s;
+}
+@keyframes dotss{
+    0%,100%{
+        transform:scale(0.5);
+    }
+    50%{
+        transform: scale(1);
+    }
+}
+@media (min-width:340px) and (max-width:360px){
+    h1{
+        font-size:30px;
+    }
+    .main{
+        left:36%;
+    }
+}
